@@ -8,10 +8,15 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    /* border: 2px solid black; */
 }
 body{
     background-color: rgb(238, 236, 236);
+}
+button{
+    transition: 0.6s all;
+}
+button:hover{
+    transform: scale(1.1);
 }
 header{
     display: flex;
@@ -42,6 +47,10 @@ header{
     font-weight: 500;
     line-height: 32px;
     color: black;
+    transition: 0.3s all;
+}
+.a ul li a:hover{
+    color: #F35F2F;
 }
  .btn button{
     background-color:#F35F2F ;
@@ -105,12 +114,28 @@ header{
 }
 .service{
     text-align: center;
+
+}
+.service2{
+    border-right: 2px solid #EBEBEB;
+    padding: 20px;
 }
 .service p{
     color: #5d5d5f;
     font-size: 20px;
     font-weight: 400;
     font-family: "DM Sans", sans-serif; 
+    padding: 10px 0;
+}
+.s1{
+    border-right: 2px solid #d3d0d0cc;
+    padding-right: 100px;
+    transform: translateX(75px);
+}
+.s3{
+    border-left: 2px solid #d3d0d0cc;
+    padding-left: 100px;
+    transform: translateX(-75px);
 }
  .service .number{
     font-size: 30px;
@@ -122,7 +147,7 @@ header{
 .main2{
     width: 1170px;
     height: 300px;
-    border: 2px solid #EBEBEB;
+    border: 2px solid #d3d0d0cc;
 }
 .what{
     text-transform: capitalize;
@@ -142,17 +167,32 @@ header{
     background-color: #fff;
     position:  relative;
     border-radius: 23px;
+    transition: 0.3s all;
     
-}    
+}  
+.web1:hover, .web2:hover, .web3:hover{
+    .w_img{
+        background-color: #FF7A50;
+        img{
+            filter: brightness(0) invert(1);
+        }
+    }
+    i{
+        color: #FF7A50;
+    }
+    transform: scale(1.1);
+}  
 .w_img{
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: white;
     position: absolute;
     top: -50px;
-    /* margin-top: 40px; */
-    /* margin-bottom: 120px; */
+    
 }
 .w_img img{
      margin: 20px 29px;
@@ -175,9 +215,10 @@ header{
     margin-top: 10px;
 }
 .web1 i,
+.web2 i ,
 .web3 i{
     font-size: 30px;
-    color:#F1F1F5 ;
+    color:grey ;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -188,26 +229,13 @@ header{
     justify-content: space-around;
     margin: 100px 0;
 }
-.web2 .w_img{
-    background-color: #FF7A50;
+  .w_img img{
+    filter: brightness(0);
 }
-.web2 i{
-     color: #FF7A50;
-}
-.web2 i{
-    font-size: 30px;
-    color:#FF7A50;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
+
 .we{
     margin: 100px;
 }
-
-
-
-
-
 .pro1{
     display: flex;
     align-items: center;
@@ -217,6 +245,8 @@ header{
 .pro1 span img{
     width: 340px;
     height: 240px;
+    transition: 0.6s all;
+
 }
 .span{
     width: 340px;
@@ -308,6 +338,7 @@ header{
     height: 30px;
     font-size: 30px;
        }
+
 .test{
     position: relative;
     width: 750px;
@@ -378,6 +409,7 @@ header{
     width: 340px;
     border: none;
     margin-top: 20px;
+    outline: none;
 }
 .in input::placeholder{
     font-family: "DM Sans", sans-serif;
@@ -408,11 +440,7 @@ header{
     justify-content: space-around;
     margin-top: 100px;
 }
-.main2{
-    width: 1170px;
-    height: 420px;
-    border: 2px solid #b9b6b6;
-}
+
 .des{
     display: flex;
     align-items: center;
@@ -446,6 +474,7 @@ textarea{
     font-size: 16px;
     padding: 10px;
     color: black;
+    outline: none;
 }
 .foot2 span p,
 .foot3 span p{
@@ -482,6 +511,7 @@ textarea{
     text-indent: 10px;
     border: 2px solid #E1E2E4;
     border-radius: 11px;
+    outline: none;
 }
 form .btn3 button{
     color: white;
